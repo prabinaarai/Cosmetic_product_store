@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./new8.JPG");
+    background-position: center;
+    background-size: cover;
+    height:109vh;
+}
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: 25px;
+}
+.icon{
+    width: 100px;
+    float: left;
+    height: 100px;
+}
+.logo{
+    color: rgb(148, 102, 86);
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left:0px;
+    float: left;
+    padding-top: 10px;
+
+}
+.menu{
+    width: 400px;
+    float: left;
+    height: 100px;
+}
+
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 70px;
+    margin-top: 70px;
+    font-size: 25px;
+    font:  sans-serif;
+}
+ ul li a{
+    text-decoration: none;
+    color: #fea9e2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    display: inline-block;
+}
+ul li a:hover{
+    color: #f7f4f2;
+    
+}
+.logo img{
+     float: left;
+     width: 150px;
+     height: auto;
+}
+.search{
+    width:330px;
+    float: left;
+    margin-left: 100px;
+}
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid hsl(320, 93%, 83%);
+    margin-top: 13px;
+    color: #f7f4f2;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #fea9e2;
+    margin-top: 13px;
+    color: #060606;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius:5px ;
+}
+.btn:focus{
+    outline: none;
+}
+.srch:focus{
+    outline: none;
+}
+.slider-frame{
+    overflow: hidden;
+    height:800px;
+    width:1200px;
+    margin-top: 40px;
+    margin-left: 300px;
+
+}
+@-webkit-keyframes slide_animation{
+    0%{left:0px;}
+    10%{left: 0px;}
+    20%{left: 120px;}
+    30%{left: 1200px;}
+    40%{left: 2400px;}
+    50%{left: 2400px;}
+    60%{left: 1200px;}
+    70%{left: 1200px;}
+    80%{left: 0px;}
+    90%{left:0px;}
+    100%{left:0px;}
+}
+.slide-images{
+    width: 3600px;
+    height:800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
